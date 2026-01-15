@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
 import ta
+
 from binance.client import Client
 from config import API_KEY, API_SECRET
-from bot import PaperTradingBot
 
+client = Client(API_KEY, API_SECRET)
 st.set_page_config(page_title="Bot Cripto - Simulador", layout="centered")
 
 client = Client(API_KEY, API_SECRET)
